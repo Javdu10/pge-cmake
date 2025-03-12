@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "Android",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/lib/android-sdk/ndk-bundle/sysroot/usr/include",
+                "/usr/lib/android-sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include"
+            ],
+            "defines": ["__ANDROID__"],
+            "compilerPath": "/usr/lib/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android28-clang",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "vector-of-bool.cmake-tools",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        },
+        {
+            "name": "iOS",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include"
+            ],
+            "defines": [
+                "__APPLE__",
+                "TARGET_OS_IPHONE"
+            ],
+            "compilerPath": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+            // Optionally, if you use compile_commands.json for iOS builds, add:
+            // "compileCommands": "${workspaceFolder}/build/ios_compile_commands.json"
+        }
+    ],
+    "version": 4
+}

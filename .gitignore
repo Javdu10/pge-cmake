@@ -1,0 +1,12 @@
+build
+linux-build
+emscripten-build
+nmake-build
+mingw-build
+android-build
+android/.cxx
+android/.gradle
+android/gradle/wrapper/gradle-wrapper.jar
+ios-build
+vs-build
+.cache

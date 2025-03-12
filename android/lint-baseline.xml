@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.0.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.0.0)" variant="all" version="8.0.0">
+
+    <issue
+        id="OldTargetApi"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        errorLine1="  &lt;uses-sdk android:minSdkVersion=&quot;21&quot; android:targetSdkVersion=&quot;31&quot;/>"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="6"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="              android:label=&quot;@string/app_name&quot;"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="12"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.tools.build:gradle than 8.0.0 is available: 8.8.1. (There is also a newer version of 8.0.𝑥 available, if upgrading to 8.8.1 is difficult: 8.0.2)"
+        errorLine1="        mavenCentral()"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="59"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        message="This `minSdkVersion` value (`21`) is not used; it is always overridden by the value specified in the Gradle build script (`21`)"
+        errorLine1="  &lt;uses-sdk android:minSdkVersion=&quot;21&quot; android:targetSdkVersion=&quot;31&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleOverrides"
+        message="This `targetSdkVersion` value (`31`) is not used; it is always overridden by the value specified in the Gradle build script (`30`)"
+        errorLine1="  &lt;uses-sdk android:minSdkVersion=&quot;21&quot; android:targetSdkVersion=&quot;31&quot;/>"
+        errorLine2="                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="6"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="ExpiredTargetSdkVersion"
+        message="Google Play requires that apps target API level 31 or higher.&#xA;"
+        errorLine1="    defaultConfig {"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="MissingApplicationIcon"
+        message="Should explicitly set `android:icon`, there is no default"
+        errorLine1="  &lt;application android:label=&quot;@string/app_name&quot;"
+        errorLine2="   ~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="8"
+            column="4"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "system_error": "cpp"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "/usr/lib/android-sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+        "ANDROID_NDK": "/usr/lib/android-sdk/ndk-bundle",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "ANDROID_ABI": "x86_64",
+        // "ANDROID_SYSROOT": "/usr/lib/android-sdk/ndk-bundle/sysroot/",
+        "ANDROID_NATIVE_API_LEVEL": "28",
+        "ANDROID_HOST_TAG":  "linux-x86_64",
+        "ANDROID_SYSROOT_ABI": "x86_64",
+        "ANDROID_NDK_ABI_NAME": "x86_64",
+        "ANDROID_ARCH_NAME": "x86_64"
+    },
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
